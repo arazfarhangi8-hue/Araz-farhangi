@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Araz VPN</title>
+<style>
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#0b1f3a,#1266c9);min-height:100vh;display:grid;place-items:center;color:#fff}.card{width:min(92%,520px);padding:32px;border-radius:28px;background:#ffffff12;backdrop-filter:blur(14px);box-shadow:0 20px 60px #0005;text-align:center}.logo{font-size:42px;margin-bottom:8px}.sub{opacity:.85;line-height:1.9}.status{margin:26px 0;padding:14px;border-radius:16px;background:#0003}.btn{width:100%;border:0;border-radius:18px;padding:18px;font-size:22px;font-weight:700;cursor:pointer;background:#fff;color:#1266c9}.note{font-size:13px;opacity:.75;margin-top:18px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">🛡️</div>
+  <h1>Araz VPN</h1>
+  <div class="sub">اتصال سریع و ساده برای سرور خصوصی WireGuard</div>
+  <div id="status" class="status">وضعیت: آماده اتصال</div>
+  <button class="btn" id="connect">اتصال سریع</button>
+  <div class="note">این صفحه رابط کاربری است. برای اتصال واقعی باید اطلاعات یک سرور WireGuard داخل برنامه/دستگاه تنظیم شده باشد. کلیدهای خصوصی را در GitHub عمومی قرار نده.</div>
+</div>
+<script>
+const status=document.getElementById('status');
+document.getElementById('connect').addEventListener('click',()=>{
+  status.textContent='وضعیت: سرور VPN هنوز تنظیم نشده است';
+  alert('Araz VPN آماده است، اما برای اتصال واقعی باید یک سرور WireGuard با IP عمومی داشته باشیم.');
+});
+</script>
+</body>
+</html>
